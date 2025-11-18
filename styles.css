@@ -278,6 +278,49 @@ body {
     color: #999;
 }
 
+/* Heading Styles */
+.page h1 {
+    font-size: 32pt;
+    font-weight: 400;
+    margin: 16px 0 8px 0;
+    line-height: 1.3;
+}
+
+.page h2 {
+    font-size: 24pt;
+    font-weight: 400;
+    margin: 14px 0 6px 0;
+    line-height: 1.3;
+}
+
+.page h3 {
+    font-size: 18pt;
+    font-weight: 500;
+    margin: 12px 0 6px 0;
+    line-height: 1.3;
+}
+
+.page h4 {
+    font-size: 14pt;
+    font-weight: 500;
+    margin: 10px 0 4px 0;
+    line-height: 1.3;
+}
+
+.page h5 {
+    font-size: 12pt;
+    font-weight: 600;
+    margin: 8px 0 4px 0;
+    line-height: 1.3;
+}
+
+.page h6 {
+    font-size: 11pt;
+    font-weight: 600;
+    margin: 8px 0 4px 0;
+    line-height: 1.3;
+}
+
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
     width: 12px;
@@ -406,4 +449,94 @@ button:focus-visible {
 
 .page {
     animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #202124;
+    color: #e8eaed;
+}
+
+body.dark-mode .header {
+    background-color: #292a2d;
+    border-bottom: 1px solid #3c4043;
+}
+
+body.dark-mode .document-title {
+    color: #e8eaed;
+}
+
+body.dark-mode .document-title:hover {
+    background-color: #3c4043;
+}
+
+body.dark-mode .document-title:focus {
+    background-color: #292a2d;
+    border: 1px solid #8ab4f8;
+}
+
+body.dark-mode .menu-item {
+    color: #e8eaed;
+}
+
+body.dark-mode .menu-item:hover {
+    background-color: #3c4043;
+}
+
+body.dark-mode .toolbar {
+    background-color: #292a2d;
+    border-bottom: 1px solid #3c4043;
+}
+
+body.dark-mode .toolbar-button:hover {
+    background-color: #3c4043;
+}
+
+body.dark-mode .toolbar-button.active {
+    background-color: #4c4f52;
+}
+
+body.dark-mode .toolbar-select {
+    background-color: #292a2d;
+    color: #e8eaed;
+    border: 1px solid #3c4043;
+}
+
+body.dark-mode .toolbar-select:hover {
+    background-color: #3c4043;
+}
+
+body.dark-mode .page {
+    background-color: #292a2d;
+    color: #e8eaed;
+    box-shadow: 0 0 0 0.75pt #3c4043, 0 0 3pt 0.75pt #3c4043;
+}
+
+body.dark-mode .page:focus {
+    box-shadow: 0 0 0 0.75pt #3c4043, 0 0 5pt 1.5pt #8ab4f8;
+}
+
+body.dark-mode .icon-button:hover {
+    background-color: #3c4043;
+}
+
+body.dark-mode ::selection {
+    background-color: #3c4043;
+}
+
+body.dark-mode ::-moz-selection {
+    background-color: #3c4043;
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+    background: #292a2d;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+    background: #5f6368;
+    border: 2px solid #292a2d;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+    background: #80868b;
 }
